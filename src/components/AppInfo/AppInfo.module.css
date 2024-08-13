@@ -1,0 +1,9 @@
+#p1{
+    position: relative;
+}
+
+#screen{
+    position: absolute;
+    left: .8rem;
+    bottom: 18rem;
+}

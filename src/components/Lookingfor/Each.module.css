@@ -1,0 +1,21 @@
+.each{
+    background-color: #FAFBFE;
+    width:55%;
+    margin-left: 5rem;
+    text-align: center;
+    height: 70%;
+    /* padding: 2rem; */
+    border-radius: 5px;
+
+}
+.each:hover{
+    border: 1px solid #2AA7FF;
+    color: #2AA7FF;
+}
+/* @media(max-width:475px){
+    .each{
+        width: 70%;
+        margin-left: 1.5rem;
+        ;
+    }
+} */
