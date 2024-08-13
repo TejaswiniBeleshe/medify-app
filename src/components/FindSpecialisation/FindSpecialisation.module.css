@@ -1,0 +1,27 @@
+.specialize{
+    /* width: 100%; */
+    border: 1px solid yellow;
+    padding:3rem 5rem;
+    background-color: #E7F0FF;
+
+    
+}
+.viewBtn{
+    width:8%;
+    margin: auto;
+}
+#heading{
+    text-align: center;
+    color:#1B3C74;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+@media(max-width:475px){
+    .specialize{
+        padding:2rem;
+    }
+    .viewBtn{
+        width:28%;
+    }
+}

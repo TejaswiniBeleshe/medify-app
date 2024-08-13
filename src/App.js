@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button} from 'react-bootstrap';
 import './App.css';
-
+import Heading from './components/Heading/Heading';
+import NavigationBar from './components/NavigationBar/NavigationBar';
+//import Footer from './components/Footer/Footer';
+import LatestNews from './components/LatestNews/LatestNews';
+import FindSpecialisation from './components/FindSpecialisation/FindSpecialisation';
+// import Card from './components/LatestNews/Card';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Heading/>
+    < NavigationBar/>
+     <LatestNews/>
+     <FindSpecialisation/>
+    {/* <Footer/> */}
+   
+    {/* <div className="parent">
+    <button type="button" class="btn btn-primary">Primary</button>
+       
+
+    </div>
+    <div className="child">
+
+    </div> */}
     </div>
   );
 }

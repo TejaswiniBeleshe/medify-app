@@ -1,0 +1,32 @@
+.card{
+    border: 1px solid rgb(140, 139, 139);
+    width:20%;
+}
+#image{
+    width:100%;
+    height:40%;
+}
+#pills{
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+.cardInfo{
+    color: #1B3C74;
+    font-weight: 500;
+        
+}
+.heading{
+    color:#77829D;
+
+}
+/* .cardInfo{
+    padding: ;
+} */
+
+@media (max-width:475px){
+    .card{
+        width:100%;
+        margin-top: .8rem;
+    }
+
+}

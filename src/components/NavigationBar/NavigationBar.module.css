@@ -1,0 +1,22 @@
+
+.navLogo{
+    margin-left: 5rem;
+}
+.navBtns{
+    /* border: 1px solid yellow;
+    width: 65%; */
+    margin-left: 14rem;
+}
+#vector{
+    padding: 0rem .4rem;
+    padding-bottom: .1rem;
+    background-color: #2AA8FF;
+    /* border: 1px solid red;*/
+} 
+#logoName{
+    /* border: 1px solid blue; */
+    margin-left: .3rem;
+    font-weight: 700;
+    color:#2AA8FF; 
+
+}
