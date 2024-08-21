@@ -1,0 +1,13 @@
+.findDoctors{
+    width: 100%;
+    height: auto;
+}
+
+.barSupport{
+    width: 100%;
+    height: 90px;
+    background-color: blue;
+    border-radius: 0 0 15px 15px;
+    background-image: linear-gradient(to right,#2AA7FF,#0C8CE5 );
+    position: relative;
+}

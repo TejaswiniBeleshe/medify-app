@@ -4,6 +4,10 @@ import './App.css';
 import Heading from './components/Heading/Heading';
 import NavigationBar from './components/NavigationBar/NavigationBar';
 import Lookingfor from './components/Lookingfor/Lookingfor';
+import Home from './components/Home';
+// import FindDoctors from './components/FindDoctors/FindDoctors';
+//import Medicals from './components/FindDoctors/Medicals/Medicals';
+
 //import AppInfo from './components/AppInfo/AppInfo';
 //import Footer from './components/Footer/Footer';
 //import LatestNews from './components/LatestNews/LatestNews';
@@ -12,22 +16,9 @@ import Lookingfor from './components/Lookingfor/Lookingfor';
 function App() {
   return (
     <div className="App">
-    <Heading/>
-    < NavigationBar/>
-    <Lookingfor/>
-    {/* <AppInfo/> */}
-     {/* <LatestNews/> */}
-     {/* <FindSpecialisation/> */}
-    {/* <Footer/> */}
-   
-    {/* <div className="parent">
-    <button type="button" class="btn btn-primary">Primary</button>
-       
-
-    </div>
-    <div className="child">
-
-    </div> */}
+      <Home/>
+      {/* <FindDoctors/> */}
+      
     </div>
   );
 }

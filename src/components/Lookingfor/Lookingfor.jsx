@@ -1,17 +1,34 @@
 import Each from "./Each";
 import styles from "../Lookingfor/Lookingfor.module.css"
-import { LiaXRaySolid } from "react-icons/lia";
+import { PiHospital } from "react-icons/pi";
+import { FaUserDoctor } from "react-icons/fa6";
+import { FaRegHospital } from "react-icons/fa";
+import { GiMedicines } from "react-icons/gi";
+import { PiAmbulance } from "react-icons/pi";
+import { CiLocationOn } from "react-icons/ci";
 const Lookingfor= ()=>{
     return(
-        <div className={`${styles.parent} d-flex flex-column justify-content-between gap-2`}>
-            <div className={`${styles.child1}`}></div>
+        <div className={`${styles.parent} d-flex flex-column justify-content-between gap-2 d-none d-md-block`}>
+            <div className={`${styles.child1} d-flex`}>
+                <div className={`${styles.searchDiv}`}>
+                <CiLocationOn size={20} style={{color:}}/><input type="text" placeholder="State"/>
+                </div>
+                <div className={`${styles.searchDiv}`}>
+                   <CiLocationOn size={20} /><input type="text" placeholder="City" />
+                </div>
+                <button>
+
+                </button>
+
+            </div>
             <div className={`${styles.child2}`}>
                 <p>You may be looking for</p>
-                <div className="d-flex flex-wrap gap-2">
-                    <Each logo={<LiaXRaySolid size={60} />} text="60"/>
-                    <Each logo={<LiaXRaySolid size={60} />} text="60"/>
-                    <Each logo={<LiaXRaySolid size={60} />} text="60"/>
-                    <Each logo={<LiaXRaySolid size={60} />} text="60"/>
+                <div className="d-flex gap-2 px-4">
+                    <Each logo={<FaUserDoctor size={60} style={{color:"#2AA7FF"}}/>} text="Doctors"/>
+                    <Each logo={<PiHospital size={60} style={{color:"#2AA7FF"}} />} text="Labs"/>
+                    <Each logo={<FaRegHospital size={60} style={{color:"#2AA7FF"}} />} text="Hospitals"/>
+                    <Each logo={<GiMedicines size={60} style={{color:"#2AA7FF"}} />} text="Medical Store"/>
+                    <Each logo={<PiAmbulance size={60} style={{color:"#2AA7FF"}} />} text="Ambulance"/>
                 </div>
             </div>
 

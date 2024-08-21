@@ -1,4 +1,10 @@
-
+.navDiv{
+    padding:1rem 5rem;
+    /* text-align: center; */
+}
+.container{
+    width: 30%;
+}
 .navLogo{
     margin-left: 5rem;
 }
@@ -19,4 +25,14 @@
     font-weight: 700;
     color:#2AA8FF; 
 
+}
+
+@media (max-width:905px){
+    .navDiv{
+        padding:1rem 1rem;
+    }
+    .container{
+        width:80%;
+        
+    }
 }

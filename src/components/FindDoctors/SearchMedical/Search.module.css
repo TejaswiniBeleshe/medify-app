@@ -1,0 +1,71 @@
+.searchBar{
+    width: 70%;
+    padding: 1rem;
+    border: 1px solid red;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    position: absolute;
+    left: 10rem;
+    top: 11rem;
+}
+.ips{
+     width:75%;
+    height:40px;
+}
+.stateDiv{
+    /* border: 1px solid yellow; */
+    width: 50%;
+    padding: .5rem;   
+    /* border: 1px solid #F0F0F0; */
+    border-radius: 8px;
+}
+.cityDiv{
+    /* border: 1px solid yellow;    */
+    width: 55%;
+    padding: .5rem;
+    /* border: 1px solid #F0F0F0; */
+    border-radius: 8px;
+}
+input{
+    border: none;
+    outline: none;
+}
+
+input:focus{
+    outline: none;
+    border: none;
+}
+.btnDiv{
+    width:20%;
+    height:40px;
+    border:"1px solid blue";
+}
+.searchBtn{
+    padding: .4rem;
+    width:100%;
+   
+    border: none;
+    border-radius: 8px;
+    background-color: #2AA8FF;
+    color: #FFFFFF;
+}
+
+/* @media(max-width:475px){
+    .searchBar{
+        left: 4rem;
+        top: 13rem;
+       
+       
+    }
+    .ips{
+        width:100%;
+        margin-bottom:.8rem ;
+    }
+    .stateDiv{
+        width: 47%;
+        /* height: 70%; */
+    /* } */
+    /* .cityDiv{
+        width: 47%;
+    } */
+/* }  */

@@ -1,0 +1,60 @@
+.landingpage{
+    /* border: 1px solid purple; */
+    padding: 2rem 0;
+    padding-bottom: 10rem;
+    
+}
+.landingInfo{
+    /* border: 1px solid red; */
+    width: 28%;
+    padding: 1rem;
+    line-height: 1.5rem;
+    height: 30%;  
+}
+.landingInfo .btn{
+    background-color: #2AA8FF;
+    color: #FFFFFF;
+}
+.landingInfo h1{
+    font-weight: 700;
+}
+.landingimg{
+    width: 40%;
+    /* border: 1px solid red; */
+    height: 50%;
+}
+.landingimg img{
+    width: 100%;
+    object-fit: cover;
+    max-height: 50%;
+    /* border: 1px solid red; */
+    
+}
+
+@media(max-width:475px){
+    .landingpage{
+        width: 100%;
+       
+    }
+    .landingInfo{
+        width: 70%;
+       
+        margin: auto;
+        margin-top: 1rem;
+    }
+    .landingimg{
+        width: 80%;
+        border: 1px solid red;
+        margin: auto;
+        
+        /* padding: 0rem 3rem; */
+    }
+    .landingimg img{
+        object-fit: cover;
+        height: 30%;
+        width: 100%;
+
+        
+    }
+
+}

@@ -1,0 +1,22 @@
+.main{
+    /* border: 1px solid yellow; */
+    /* width: 75%; */
+    /* margin: auto; */
+    padding: 3rem 1rem;
+    padding-top: 11rem;
+    background-color: #FFFFFF;
+}
+.main img{
+    width: 90%;
+    height: 60%;
+
+}
+@media(max-width:475px){
+    .main{
+       padding: 1rem ;
+    }
+    .main img{
+        width: 100%;
+    }
+   
+}
