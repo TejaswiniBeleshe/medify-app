@@ -5,7 +5,11 @@ import NavigationBar from "./NavigationBar/NavigationBar";
 import LandingPage from "./LandingPage/LandingPage";
 import SlideCompo from "./SlideCompo/SlideCompo";
 import Lookingfor from "./Lookingfor/Lookingfor";
-
+import FindSpecialisation from "./FindSpecialisation/FindSpecialisation";
+import SpecialistList from "./SpecialistList/SpecialistList";
+import PatientCare from "./PatientCare/PatientCare";
+import LatestNews from "./LatestNews/LatestNews";
+import AskedQue from "./AskedQue/AskedQue";
 
 const Home = ()=>{
     return(
@@ -17,6 +21,11 @@ const Home = ()=>{
             </div>
             <SlideCompo/>
             <Lookingfor/>
+            <FindSpecialisation/>
+            <SpecialistList/>
+            <PatientCare/>
+            <LatestNews/>
+            <AskedQue/>
            
         </div>
     )

@@ -1,13 +1,35 @@
+.latestDiv{
+    background-color: #FFFFFF;
+    width: 100%;
+    /* border: 1px solid rgb(252, 255, 252); */
+    height: auto;
+    padding: 2rem;
+   
+  
+}
+.latestDiv h6{
+    color: #2AA7FF;
+    /* margin-top: 2rem; */
+    text-align: center;
+}
+.latestDiv h1{
+    color: #1B3C74;
+    margin-bottom: 2rem;
+    text-align: center;
+}
 .cards{
     width:100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height:auto;
-    padding:2rem 6rem;
-    
+    padding:0rem 6rem;   
 }
-
 @media(max-width:475px){
     .cards{
-        padding:2rem;
+        width: 100%;
+        padding: .5rem;
+    }
+    .latestDiv h1{
+        margin-bottom: .5rem;
+    
     }
 }

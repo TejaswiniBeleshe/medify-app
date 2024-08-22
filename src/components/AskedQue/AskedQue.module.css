@@ -1,0 +1,44 @@
+.askedqueDiv{
+    width: 100%;
+    border: 1px solid yellow;
+    padding: 1rem;
+}
+.askedqueDiv h6{
+    color: #2AA7FF;
+
+}
+.askedqueDiv h1{
+    color: #1B3C74;
+}
+
+.askedqueData img{
+    width: 350px;
+    height: 350px;
+    
+}
+.queDiv{
+    width: 30%;
+}
+
+.que{
+    color: #1B3C74;
+    font-weight: bold;
+    /* border: 1px solid red; */
+    width: 80%;
+}
+
+
+@media(max-width:475px){
+    .queDiv{
+        width: 100%;
+        padding-left: 1rem;
+    }
+    .que{
+        width:80%;
+    }
+    .askedqueData img{
+        width: 280px;
+        height: 300px;
+        
+    }
+}

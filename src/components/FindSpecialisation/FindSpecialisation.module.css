@@ -1,6 +1,6 @@
 .specialize{
     /* width: 100%; */
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     padding:3rem 5rem;
     background-color: #E7F0FF;
 
@@ -9,6 +9,13 @@
 .viewBtn{
     width:8%;
     margin: auto;
+}
+.viewBtn button{
+    border:none;
+    padding:.5rem 1.3rem;
+    border-radius: 8px;
+    background-color:#2AA8FF ;
+    color:#FFFFFF
 }
 #heading{
     text-align: center;

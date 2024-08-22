@@ -8,8 +8,10 @@
     /* border: 1px solid red; */
     width: 28%;
     padding: 1rem;
+    padding-top:3rem;
     line-height: 1.5rem;
     height: 30%;  
+    /* margin-top: 2rem; */
 }
 .landingInfo .btn{
     background-color: #2AA8FF;
@@ -19,14 +21,15 @@
     font-weight: 700;
 }
 .landingimg{
+    margin-bottom: 3rem;
     width: 40%;
     /* border: 1px solid red; */
-    height: 50%;
+    height: 100%;
 }
 .landingimg img{
     width: 100%;
-    object-fit: cover;
-    max-height: 50%;
+    /* object-fit: cover; */
+    height: 100%;
     /* border: 1px solid red; */
     
 }
@@ -34,17 +37,18 @@
 @media(max-width:475px){
     .landingpage{
         width: 100%;
+        height: auto;
        
     }
     .landingInfo{
         width: 70%;
-       
+       padding-top: 1rem;
         margin: auto;
         margin-top: 1rem;
     }
     .landingimg{
         width: 80%;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         margin: auto;
         
         /* padding: 0rem 3rem; */

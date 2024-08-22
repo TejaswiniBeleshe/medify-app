@@ -21,6 +21,7 @@
     border: 1px solid purple;
     width: 30%;
     height: 90%;
+    padding: .5rem;
 }
 .searchDiv input{
     border: none;
@@ -28,6 +29,14 @@
 .searchDiv input:focus{
     outline: none;
    
+}
+.child1 button{
+    background-color: #2AA8FF;
+    color: #FFFFFF;
+    padding: .5rem 1.4rem;
+    border: none;
+    border-radius: 8px;
+
 }
 .child2{
     border:1px solid yellow;

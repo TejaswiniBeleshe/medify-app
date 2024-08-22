@@ -1,13 +1,22 @@
 .home{
     width: 100%;
     /* border: 1px solid purple; */
+    height: auto;
     position: relative;
-}
 
+    overflow: hidden;
+    
+}
+.landingPage{
+    height: 100vh;
+}
 
 @media(max-width:475px){
     .home{
         width: 100%;
         overflow-x: hidden;
+    }
+    .landingPage{
+        min-height: 50vh;
     }
 }

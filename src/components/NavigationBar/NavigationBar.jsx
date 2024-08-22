@@ -8,9 +8,9 @@ const NavigationBar = ()=>{
     return(
         <Navbar expand="lg" className={`w-100 d-flex  align-items-center ${styles.navDiv}`} >
         {/* <Container className="w-100 d-flex justify-content-between" style={{border:"1px solid yellow"}}> */}
-        <Container className={styles.container} >
-        <Navbar.Brand href="#home" className="px-4"><span id={`${styles.vector}`}><img src={logo} alt="not found" height="13px"/></span><span id={styles.logoName}>Medifty</span></Navbar.Brand>
-        </Container>
+        {/* <Container className={styles.container} >
+        <Navbar.Brand href="#home" className="px-4"><span id={`${styles.vector}`}><img src={logo} alt="not found" height="5px"/></span><span id={styles.logoName}>Medifty</span></Navbar.Brand>
+        </Container> */}
         <Navbar.Toggle style={{marginRight:".5rem"}} aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

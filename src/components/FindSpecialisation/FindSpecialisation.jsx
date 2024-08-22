@@ -50,7 +50,7 @@ const FindSpecialisation = ()=>{
             </div>
        </div>
        <div className={styles.viewBtn}>
-       <button className="btn btn-primary">View All</button>
+       <button>View All</button>
 
        </div>
            

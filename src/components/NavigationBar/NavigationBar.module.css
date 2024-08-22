@@ -1,9 +1,13 @@
 .navDiv{
     padding:1rem 5rem;
     /* text-align: center; */
+    height: 10%;
+    border: 1px solid purple;
+
+
 }
 .container{
-    width: 30%;
+    width: 10%;
 }
 .navLogo{
     margin-left: 5rem;

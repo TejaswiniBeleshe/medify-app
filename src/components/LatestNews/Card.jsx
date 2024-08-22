@@ -1,11 +1,12 @@
 import React from "react";
 import styles from "../LatestNews/Card.module.css"
 import pill from "../../assets/pill.png"
+import pic from "../../assets/detox.png"
 
 const Card = ()=>{
     return(
         <div className={styles.card} >
-            <img id={styles.image} src="https://images.pexels.com/photos/27054232/pexels-photo-27054232/free-photo-of-a-road-with-a-sign-that-says-road-to-the-ocean.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="not found"/>
+            <img id={styles.image} src={pic} alt="not found"/>
             <div className={`${styles.cardInfo} p-3`} >
                 <span className={styles.heading}>Medical | March 31,2024</span>
                 <p>6 Tips To Protect Your Mental Health When You're Sick</p>

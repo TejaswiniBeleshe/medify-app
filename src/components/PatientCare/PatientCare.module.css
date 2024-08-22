@@ -1,0 +1,46 @@
+.pcareDiv{
+    border: 1px solid #eeff00;
+    /* height: 50px; */
+    width: 100%;
+    height: auto;
+    padding: 4.5rem;
+
+}
+
+.pcareImg{
+    border: 1px solid green;
+    /* height: 50px; */
+    /* height: auto; */
+    width: 40%;
+  
+    position: relative;
+  
+}
+.pcareImg img{
+    height: 200px;
+    width: 200px;
+}
+
+.pcareInfo{
+    border: 1px solid green;
+    /* height: 50px; */
+    padding:1rem;
+    width: 40%;
+}
+.pcareInfo h6 {
+    color: #2AA7FF;
+}
+
+@media(max-width:475px){
+    .pcareDiv{
+        padding: 2rem 1rem;
+    }
+    .pcareImg{
+        margin: .5rem 0;
+        width: 100%;
+    }
+    .pcareInfo{
+        margin: .5rem 0;
+        width: 100%;
+    }
+}
