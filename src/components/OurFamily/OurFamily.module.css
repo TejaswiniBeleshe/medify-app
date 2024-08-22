@@ -1,0 +1,59 @@
+.ofDiv{
+    width: 100%;
+    border: 1px solid yellow;
+    padding: 2rem;
+}
+
+.ofInfo{
+    border: 1px solid red;
+    width: 30%;
+    
+}
+.ofInfo h6{
+    color: #2AA7FF;
+}
+.ofInfo h1{
+    color: #1B3C74;
+}
+.ofInfo p{
+    line-height: 2rem;
+    color: #77829D;
+}
+.ofImgs{
+    border: 1px solid red;
+    width: 40%;
+}
+.ofImgs img{
+    width:230px;
+    height: 230px;
+}
+
+.imgDiv1{
+    border: 1px solid purple;
+}
+
+.imgDiv2{
+    border: 1px solid purple;
+    padding-top: 2rem;
+}
+
+@media(max-width:475px){
+    .ofDiv{
+        padding: 1rem;
+    }
+    .ofInfo{ 
+        width: 100%;
+        padding: 1rem;
+    }
+    .ofImgs{
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .ofImgs img{
+        width:150px;
+        height: 150px;
+    }
+    .ofInfo p{
+        line-height: 1.6rem;
+    }
+}

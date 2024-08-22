@@ -10,6 +10,7 @@ import SpecialistList from "./SpecialistList/SpecialistList";
 import PatientCare from "./PatientCare/PatientCare";
 import LatestNews from "./LatestNews/LatestNews";
 import AskedQue from "./AskedQue/AskedQue";
+import OurFamily from "./OurFamily/OurFamily";
 
 const Home = ()=>{
     return(
@@ -25,7 +26,9 @@ const Home = ()=>{
             <SpecialistList/>
             <PatientCare/>
             <LatestNews/>
+            <OurFamily/>
             <AskedQue/>
+            
            
         </div>
     )

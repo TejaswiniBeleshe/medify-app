@@ -4,21 +4,54 @@
     width: 100%;
     height: auto;
     padding: 4.5rem;
+    padding-bottom: 6rem;
 
 }
 
 .pcareImg{
     border: 1px solid green;
+  
     /* height: 50px; */
     /* height: auto; */
-    width: 40%;
+    width: 30%;
   
     position: relative;
   
 }
+.pc2{
+    position: absolute;
+    top: 10rem;
+    left: 2rem;
+    z-index: 1;
+    padding: .2rem;
+    background-color: #FFFFFF;
+
+
+}
+.pc1{
+    position: absolute;
+    left: 8rem;
+    padding: .2rem;
+    background-color: #FFFFFF;
+   
+}
 .pcareImg img{
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
+}
+.fcon{
+    border: 1px solid olive;
+    height: 30%;
+    /* width: 30%; */
+
+    position: absolute;
+    top: 2rem;
+    z-index: 1;
+}
+.fcon img{
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover; */
 }
 
 .pcareInfo{
@@ -34,13 +67,43 @@
 @media(max-width:475px){
     .pcareDiv{
         padding: 2rem 1rem;
+        
     }
     .pcareImg{
         margin: .5rem 0;
         width: 100%;
+        min-height: 50vh;
+        padding: 1rem;
+       
+    }
+    .pcareImg img{
+        height: 200px;
+        width: 200px;
     }
     .pcareInfo{
         margin: .5rem 0;
         width: 100%;
+        
+    }
+    .pc1{
+        /* position: absolute; */
+       left: 7rem;
+      
+    }
+    .pc2{
+        left: 1rem;
+        /* top: 10rem; */
+    }
+    .fcon{
+   
+        height: 40%;
+        
+        top: 2rem;
+        z-index: 1;
+    }
+    .fcon img{
+        height: 80%;
+        width: 80%;
+        /* object-fit: cover; */
     }
 }

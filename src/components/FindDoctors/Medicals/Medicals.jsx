@@ -14,6 +14,12 @@ const Medicals = ()=>{
                         return <EachMedical ele={ele}/>
                     }):""
                 }
+
+               <div className={`${styles.bookingDiv}`}>
+                         
+                
+
+               </div>
             </div>
             <div style={{border:"1px solid yellow",width:"30%"}}>
                 <img src={image} alt="not found" width="80%" height="80%" />

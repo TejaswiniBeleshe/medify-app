@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./AskedQue.module.css"
 import pic from "../../assets/askedque.png"
 import { FaPlus } from "react-icons/fa";
+import hp from "../../assets/happy.png";
 const AskedQue =()=>{
     return(
         <div className={`${styles.askedqueDiv}`}>
@@ -9,14 +10,13 @@ const AskedQue =()=>{
             <h1 className="text-center">Frequently Asked Questions</h1>
 
             <div className={`${styles.askedqueData} w-100 d-flex flex-column flex-lg-row justify-content-evenly align-items-center py-4`}>
-                <div className="">
+                <div className={styles.faqImg}>
                     <img src={pic} alt="Not Found"/>
-                    <div className= "d-flex h-10" style={{backgroundColor:"#FFFFFF"}}>
-                        <div>😊</div>
-                        <div><h6>84+</h6><p>Happy Patients</p></div>
+                    <div className={styles.hpDiv}>
+                            <img src={hp} alt="not found"/>
+                        </div>
+                </div> 
 
-                    </div>
-                </div>
 
                 <div className={styles.queDiv}>
                     <div className="w-100 px-2 py-4 d-flex"><div className={styles.que}>Why choose our medical for your family?</div><FaPlus style={{color:"#2AA7FF",marginTop:".3rem",marginLeft:"1rem"}}/></div>

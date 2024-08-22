@@ -3,15 +3,17 @@ import styles from "./PatientCare.module.css"
 import pc1 from "../../assets/Pcare/p1.png";
 import pc2 from "../../assets/Pcare/p2.png";
 import { FcApproval } from "react-icons/fc";
+import fc from "../../assets/FreeCon.png"
 
 const PatientCare = ()=>{
     return(
         <div className={`${styles.pcareDiv} d-flex justify-content-evenly flex-lg-row flex-column`}>
 
             <div className={`${styles.pcareImg} `}>
+                <div className={styles.pc2}><img className={styles.i2} src={pc2} alt="not found" /></div>
+                <div className={styles.pc1}><img className={styles.i1} src={pc1} alt="not found" /></div>
+                <div className={styles.fcon}><img src={fc} alt="not found" /></div>
                 
-                <img className={styles.i2} src={pc2} alt="not found" />
-                <img className={styles.i1} src={pc1} alt="not found" />
 
             </div>
 

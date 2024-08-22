@@ -3,7 +3,7 @@ import image from "../../../assets/hospital.png"
 import { MdThumbUpAlt } from "react-icons/md";
 const EachMedical = ({ele})=>{
     return(
-       
+       <>
         <div className={`${styles.hospi} d-flex justify-content-evenly`}>
             {/* Logo */}
            <div className={`${styles.hospLogo}`}>
@@ -25,6 +25,8 @@ const EachMedical = ({ele})=>{
             <button className={styles.btn}>Bool FREE Center Visit</button>
            </div>
         </div>
+       
+        </>
     )
 }
 export default EachMedical;
