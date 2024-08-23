@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { NavLink } from "react-router-dom";
 const NavigationBar = ()=>{
     return(
         <Navbar expand="lg" className={`w-100 d-flex  align-items-center ${styles.navDiv}`} >
@@ -14,7 +15,7 @@ const NavigationBar = ()=>{
         <Navbar.Toggle style={{marginRight:".5rem"}} aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Find Doctores</Nav.Link>
+            <NavLink to="finddoctors">Find Doctores</NavLink>
             <Nav.Link href="#link">Hospitals</Nav.Link>
             <Nav.Link href="#link">Medicines</Nav.Link>
             <Nav.Link href="#link">Surgeries</Nav.Link>

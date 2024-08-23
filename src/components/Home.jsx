@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import styles from "./Home.module.css"
 import Heading from "./Heading/Heading";
 import NavigationBar from "./NavigationBar/NavigationBar";
@@ -10,12 +10,25 @@ import SpecialistList from "./SpecialistList/SpecialistList";
 import PatientCare from "./PatientCare/PatientCare";
 import LatestNews from "./LatestNews/LatestNews";
 import AskedQue from "./AskedQue/AskedQue";
+
 import OurFamily from "./OurFamily/OurFamily";
+import { useNavigate } from "react-router-dom";
 
 const Home = ()=>{
+    let [name,setName ] = useState('');
+    let [lname,setlname] = useState('');
+    let navigate = useNavigate();
+    const handle = ()=>{
+        navigate(`finddoctors/${name}/${lname}`)
+    }
     return(
         <div className={`${styles.home}`}>
-            <Heading/>
+            {/* <Heading/> */}
+            <form onSubmit={handle}>
+                <input type="text" value={name} onChange={(e)=>setName(e.target.value)} />
+                <input type="text" value={lname} onChange={(e)=>setlname(e.target.value)} />
+                <button type="submit">submit</button>
+            </form>
             <div className={`w-100 ${styles.landingPage}`}>
             <NavigationBar/>
             <LandingPage/>
@@ -27,9 +40,7 @@ const Home = ()=>{
             <PatientCare/>
             <LatestNews/>
             <OurFamily/>
-            <AskedQue/>
-            
-           
+            {/* <AskedQue/> */}
         </div>
     )
 }

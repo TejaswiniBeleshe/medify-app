@@ -5,14 +5,16 @@ import styles from "./FindDoctors.module.css"
 import SearchBar from "./SearchMedical/SearchBar";
 import { Alert } from "bootstrap";
 import Medicals from "./Medicals/Medicals";
+import { useParams } from "react-router-dom";
 
 export const context = createContext();
 const FindDoctors = ()=>{
+    const {n,ln} = useParams();
     const [resData,setResData] = useState([]);
     const [resState,setResState] = useState([]);
     const [resCity,setResCity] = useState([])
-    const [ipCity,setIpCity] = useState('');
-    const [ipState,setIpState] = useState('');
+    const [ipCity,setIpCity] = useState();
+    const [ipState,setIpState] = useState();
     
    
     const apiCall = async(api)=>{
@@ -44,10 +46,12 @@ const FindDoctors = ()=>{
     return(
         <div className={styles.findDoctors}>
             <context.Provider value={{ipCity,setIpCity,ipState,setIpState,handleSearch,resState,resCity,resData}}>
-            <Heading/>
+            {/* <Heading/> */}
             <NavigationBar/>
              <div className={styles.barSupport}>
+                {ln} {n}
              </div>
+             
              <SearchBar/>
              <Medicals/>
              </context.Provider>

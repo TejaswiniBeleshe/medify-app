@@ -3,9 +3,7 @@
     /* border: 1px solid purple; */
     height: auto;
     position: relative;
-
-    overflow: hidden;
-    
+    overflow: hidden; 
 }
 .landingPage{
     height: 100vh;

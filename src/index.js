@@ -4,12 +4,23 @@ import TabPanel from '@mui/lab/TabPanel'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createBrowserRouter, createRoutesFromElements,Route, RouterProvider } from 'react-router-dom';
+import Home from './components/Home';
+import FindDoctors from './components/FindDoctors/FindDoctors';
 
+const router = createBrowserRouter(
+  createRoutesFromElements(
+      <Route path="/" element={<App/>}>
+        <Route path="" element={<Home/>}/>
+        <Route path="finddoctors/:n/:ln" element={<FindDoctors/>}/>
+      </Route>
+  )
+)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );
 
