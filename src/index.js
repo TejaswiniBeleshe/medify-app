@@ -7,12 +7,15 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, createRoutesFromElements,Route, RouterProvider } from 'react-router-dom';
 import Home from './components/Home';
 import FindDoctors from './components/FindDoctors/FindDoctors';
+import MyBookings from './components/MyBookings';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-      <Route path="/" element={<App/>}>
-        <Route path="" element={<Home/>}/>
-        <Route path="finddoctors/:n/:ln" element={<FindDoctors/>}/>
+      <Route path='/' element={<App/>}>
+        <Route path='' element={<Home/>}/>
+        <Route path='find' element={<FindDoctors/>}/>
+        <Route path='finddoctors/:s/:c' element={<FindDoctors/>}/>
+        <Route path='bookings' element={<MyBookings/>}/>
       </Route>
   )
 )

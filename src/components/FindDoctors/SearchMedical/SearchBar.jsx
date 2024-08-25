@@ -7,8 +7,8 @@ const SearchBar = ()=>{
     const {ipCity,setIpCity,ipState,setIpState,handleSearch,resState,resCity} = useContext(context)
     return(
         <div className={`${styles.searchBar} d-flex flex-column flex-lg-row justify-content-between`}>
-            <div className={`${styles.ips} d-flex justify-content-between`} style={{border:"1px solid yellow"}} > 
-                <div className={styles.stateDiv} >
+            <div className={`${styles.ips} d-flex justify-content-evenly w-100`} style={{border:"1px solid yellow"}} > 
+                <div className={`${styles.stateDiv} d-flex`} >
                   <label htmlFor="state" className="px-2"><CiLocationOn /></label>
                   <select value={ipState} id="state" style={{border:"none"}} onChange={(e)=>setIpState(e.target.value)}>
                     <option value="">State</option>
@@ -20,7 +20,7 @@ const SearchBar = ()=>{
 
                   </select>
                 </div>
-                <div className={styles.cityDiv} >
+                <div className={`${styles.cityDiv} d-flex`} >
                   <label htmlFor="state" className="px-2"><CiLocationOn /></label>
                 
                   <select value={ipCity} id="state" placeholder="City" onChange={(e)=>setIpCity(e.target.value)} >
@@ -37,7 +37,7 @@ const SearchBar = ()=>{
                 </div>
             </div>
             <div className={styles.btnDiv} >
-                <button className={styles.searchBtn} onClick={handleSearch}><IoMdSearch size={25} style={{color:"#FFFFFF"}} />Search</button>
+                <button className={styles.searchBtn} onClick={()=>handleSearch(ipState,ipCity)}><IoMdSearch size={25} style={{color:"#FFFFFF"}} />Search</button>
             </div>
 
         </div>

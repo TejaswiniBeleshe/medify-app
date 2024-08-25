@@ -15,13 +15,13 @@ const NavigationBar = ()=>{
         <Navbar.Toggle style={{marginRight:".5rem"}} aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <NavLink to="finddoctors">Find Doctores</NavLink>
-            <Nav.Link href="#link">Hospitals</Nav.Link>
+            <NavLink to='/find'>Find Doctores</NavLink>
+            {/* <Nav.Link href="#link">Hospitals</Nav.Link>
             <Nav.Link href="#link">Medicines</Nav.Link>
             <Nav.Link href="#link">Surgeries</Nav.Link>
             <Nav.Link href="#link">Software for Provider</Nav.Link>
-            <Nav.Link href="#link">Facilities</Nav.Link>
-            <Nav.Link href="#link"><button className="btn btn-info">My Bookings</button></Nav.Link>
+            <Nav.Link href="#link">Facilities</Nav.Link> */}
+            <NavLink to='/bookings'><button className="btn btn-info">My Bookings</button></NavLink>
           </Nav>
         </Navbar.Collapse>
       {/* </Container> */}

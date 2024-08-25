@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useState,useEffect} from "react";
 import styles from "./Home.module.css"
 import Heading from "./Heading/Heading";
 import NavigationBar from "./NavigationBar/NavigationBar";
@@ -15,26 +15,57 @@ import OurFamily from "./OurFamily/OurFamily";
 import { useNavigate } from "react-router-dom";
 
 const Home = ()=>{
-    let [name,setName ] = useState('');
-    let [lname,setlname] = useState('');
+    const [hstate,setHState] = useState("");
+    const [hcity,setHCity] = useState("");
+
+    const [hallState,setHAllState] = useState([]);
+    const [hallCity,setHAllCity] = useState([]);
     let navigate = useNavigate();
     const handle = ()=>{
-        navigate(`finddoctors/${name}/${lname}`)
+        navigate(`finddoctors/${hstate}/${hcity}`)
     }
+    const apiCall = async(url)=>{
+        try{
+            let res = await fetch(url);
+            let data = await res.json();
+            return data;
+        }catch(err){
+            console.log("not found");
+        }
+        
+    } 
+    useEffect(()=>{
+        let res = apiCall("https://meddata-backend.onrender.com/states");
+        // console.log(res);
+        res.then(ele=>setHAllState([...ele]));
+      
+    },[])
+
+    useEffect(()=>{
+        if(hstate){
+        let res = apiCall(`https://meddata-backend.onrender.com/cities/${hstate}`);
+        //    console.log(res);
+           res.then(ele=>setHAllCity([...ele]));
+        }
+    },[hstate])
+
+    // const handleSearch = ()=>{
+    //     // console.log(resState,resCity)
+    //      let res = apiCall(`https://meddata-backend.onrender.com/data?state=${hstate}&city=${hcity}`);
+    //      console.log(res);
+    //      res.then(ele=>setResData(ele))
+         
+    // }
     return(
         <div className={`${styles.home}`}>
             {/* <Heading/> */}
-            <form onSubmit={handle}>
-                <input type="text" value={name} onChange={(e)=>setName(e.target.value)} />
-                <input type="text" value={lname} onChange={(e)=>setlname(e.target.value)} />
-                <button type="submit">submit</button>
-            </form>
-            <div className={`w-100 ${styles.landingPage}`}>
             <NavigationBar/>
+            <div className={`w-100 ${styles.landingPage}`}>
+          
             <LandingPage/>
             </div>
             <SlideCompo/>
-            <Lookingfor/>
+            <Lookingfor hstate={hstate} setHState={setHState} setHCity={setHCity} hcity = {hcity} hallState={hallState} hallCity={hallCity} handle={handle}/>
             <FindSpecialisation/>
             <SpecialistList/>
             <PatientCare/>

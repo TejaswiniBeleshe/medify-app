@@ -1,25 +1,23 @@
-.medicals{
+.bookedMed{
     width: 100%;
     border: 1px solid yellow;
     padding-top: 5rem;
 }
-.medCards{
+.cards{
+    border:1px solid red;
     width:60%;
     padding-top:3rem;
-    border:1px solid red;
 }
 .addDiv{
-    width: 30%;
+    width:"40%";
     padding-top: 5rem;
 }
 
 @media(max-width:475px){
-    .medicals{
+    .bookedMed{
         width: 100%;
     }
-    .medCards{
+    .cards{
         width: 100%;
-        height: ;
     }
-    
 }

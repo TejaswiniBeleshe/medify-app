@@ -1,30 +1,40 @@
 import EachMedical from "../EachMedical/EachMedical";
 import styles from "../Medicals/Medicals.module.css";
 import {context} from "../FindDoctors"
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import image from "../../../assets/desc.png"
 const Medicals = ()=>{
     const {resData} = useContext(context);
-    console.log("medicak",resData)
+    
+    
+    useEffect(()=>{
+      let check = localStorage.hasOwnProperty('bookings')
+      if(!check){
+        localStorage.setItem('bookings',JSON.stringify([]));
+      }
+    },[])
+    const handleBook=(e)=>{
+        let val = e.target.textContent;
+        console.log('text of time',val)
+        let getArr = JSON.parse(localStorage.getItem('bookings'));
+        getArr.push(val);
+        localStorage.setItem('bookings',JSON.stringify([...getArr]))
+    }
+    // useEffect(()=>{
+
+    // })
     return(
         <div className={`${styles.medicals} d-flex`}>
-            <div style={{border:"1px solid red",width:"60%",paddingTop:"3rem"}}>
+            <div className={styles.medCards}>
                 {
                     resData.length? resData.map(ele=>{
-                        return <EachMedical ele={ele}/>
+                        return <EachMedical ele={ele} handleBook = {handleBook}/>
                     }):""
                 }
 
-               <div className={`${styles.bookingDiv}`}>
-                         
-                
-
-               </div>
             </div>
-            <div style={{border:"1px solid yellow",width:"30%"}}>
-                <img src={image} alt="not found" width="80%" height="80%" />
-
-
+            <div className={`${styles.addDiv} d-none d-lg-block`} style={{border:"1px solid yellow"}}>
+                <img src={image} alt="not found" width="80%" height="200px" />
             </div>
         </div>
     )

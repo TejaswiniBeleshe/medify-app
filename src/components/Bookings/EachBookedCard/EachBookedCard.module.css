@@ -4,7 +4,6 @@
     margin: 2rem 7rem;
     
     padding: 2rem;
-    
     width:80%;
     border-radius: 8px;
 
@@ -38,29 +37,31 @@
 
 }
 
-.bookBtn{
-    border: 1px solid purple;
-    width: 29%;
-   
-}
-.bookBtn p{
-    color:#01A400;
-    margin-bottom: .5rem;
+.bookedTime{
+    padding:.2rem .6rem;
+    border: 2px solid #2AA7FF;
+    color:#2AA7FF;
+    border-radius: 8px;
+
 }
 
-.bookBtn .btn{
-    background-color: #2AA7FF;
-    color :#FFFFFF;
-    padding:.5rem 1rem;
-    border: none;
-    border-radius: 5px;
+.bookedDate{
+    margin-left: .5rem;
+    padding:.2rem .6rem;
+    border: 2px solid #00A500;
+    color: #00A500;
+    border-radius: 8px;
+}
+
+.bookBtn {
+    border: 1px solid rgb(84, 84, 197);
+  
 }
 
 @media(max-width:475px){
     .hospi{
         width: 100%;
         margin: 2rem 0rem;
-        padding: 0rem;
+        padding:0;
     }
-
 }
