@@ -7,7 +7,7 @@ const SearchBar = ()=>{
     const {ipCity,setIpCity,ipState,setIpState,handleSearch,resState,resCity} = useContext(context)
     return(
         <div className={`${styles.searchBar} d-flex flex-column flex-lg-row justify-content-between`}>
-            <div className={`${styles.ips} d-flex justify-content-evenly w-100`} style={{border:"1px solid yellow"}} > 
+            <div className={`${styles.ips} d-flex justify-content-evenly w-100`}  > 
                 <div className={`${styles.stateDiv} d-flex`} >
                   <label htmlFor="state" className="px-2"><CiLocationOn /></label>
                   <select value={ipState} id="state" style={{border:"none"}} onChange={(e)=>setIpState(e.target.value)}>

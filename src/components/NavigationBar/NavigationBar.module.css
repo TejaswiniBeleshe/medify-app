@@ -2,7 +2,7 @@
     padding:1rem 5rem;
     /* text-align: center; */
     height: 10%;
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
 
 
 }
@@ -23,6 +23,11 @@
     background-color: #2AA8FF;
     /* border: 1px solid red;*/
 } 
+.eachNav{
+    color: #102851;
+    text-decoration: none;
+    text-align: center;
+}
 #logoName{
     /* border: 1px solid blue; */
     margin-left: .3rem;
@@ -31,7 +36,7 @@
 
 }
 
-@media (max-width:905px){
+@media (max-width:475px){
     .navDiv{
         padding:1rem 1rem;
     }

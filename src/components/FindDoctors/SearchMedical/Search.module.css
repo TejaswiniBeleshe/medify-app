@@ -1,7 +1,7 @@
 .searchBar{
     width: 70%;
     padding: 1rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-color: #FFFFFF;
     border-radius: 12px;
     position: absolute;

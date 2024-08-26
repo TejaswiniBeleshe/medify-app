@@ -1,11 +1,11 @@
 .ofDiv{
     width: 100%;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     padding: 2rem;
 }
 
 .ofInfo{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 30%;
     
 }
@@ -20,7 +20,7 @@
     color: #77829D;
 }
 .ofImgs{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 40%;
 }
 .ofImgs img{
@@ -29,11 +29,11 @@
 }
 
 .imgDiv1{
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
 }
 
 .imgDiv2{
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     padding-top: 2rem;
 }
 

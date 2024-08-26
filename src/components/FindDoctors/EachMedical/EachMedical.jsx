@@ -5,6 +5,7 @@ import { MdThumbUpAlt } from "react-icons/md";
 import Tabcompo from "../Tab/Tab";
 const EachMedical = ({ele,handleBook})=>{
   const [show,setShow] = useState(false);
+  console.log(ele)
     return(
      
       <div className={`${styles.hospi}`} style={{border:"1px solid purple"}}>
@@ -18,11 +19,11 @@ const EachMedical = ({ele,handleBook})=>{
             
             {/* Hospital info */}
            <div className={`${styles.hospInfo}`}>
-             <h5>drfgthjkl</h5>
-             <span>Banglore karnataka</span>
-             <p>Balakrishna nimbalkar colony akol road Nipani+1 more</p>
+             <h5>{ele["Hospital Name"]}</h5>
+             <span>{ele["City"]} {ele["State"]}</span>
+             <p>{ele["Address"]}</p>
              <p><span>FREE</span><span>$500</span>Consultant fee at clinic</p>
-             <span id={styles.likes}><MdThumbUpAlt style={{color:"#FFFFFF"}} />5</span>
+             <span id={styles.likes}><MdThumbUpAlt style={{color:"#FFFFFF"}} />{ele["Hospital overall rating"]}</span>
            </div>
            <div className={`${styles.bookBtn} d-flex flex-column justify-content-end align-items-center`}>
               <p>Available Today</p>
@@ -32,7 +33,7 @@ const EachMedical = ({ele,handleBook})=>{
         {
           show?
         <div className="w-100">
-          <Tabcompo handleBook={handleBook}/>
+          <Tabcompo handleBook={handleBook} ele={ele}/>
         </div>:""
         }
         </div>

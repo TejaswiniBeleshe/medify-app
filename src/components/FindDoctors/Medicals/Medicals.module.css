@@ -1,12 +1,12 @@
 .medicals{
     width: 100%;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     padding-top: 5rem;
 }
 .medCards{
     width:60%;
     padding-top:3rem;
-    border:1px solid red;
+    /* border:1px solid red; */
 }
 .addDiv{
     width: 30%;
@@ -19,7 +19,7 @@
     }
     .medCards{
         width: 100%;
-        height: ;
+        /* height: ; */
     }
     
 }

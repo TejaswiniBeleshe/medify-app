@@ -4,14 +4,14 @@ import styles from "./MyBookings.module.css"
 import BookedCards from "./Bookings/BookedCards/BookedCards";
 import SearchBooked from "./Bookings/SearchBooked/SearchBooked";
 const MyBookings = ()=>{
-  const [allBooked,setAllBooked] = useState([]);
+  // const [allBooked,setAllBooked] = useState([]);
     
-   useEffect(()=>{
-    if(localStorage.hasOwnProperty('bookings')){
-      let res = JSON.parse(localStorage.getItem('bookings'));
-      setAllBooked(res);
-    }
-   },[])
+  //  useEffect(()=>{
+  //   if(localStorage.hasOwnProperty('bookings')){
+  //     let res = JSON.parse(localStorage.getItem('bookings'));
+  //     setAllBooked(res);
+  //   }
+  //  },[])
     return(
         <>
           <NavigationBar/>

@@ -19,7 +19,7 @@ let arrMonth= ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov'
 let res = [];
 
 
-export default function Tabcompo({handleBook}) {
+export default function Tabcompo({handleBook,ele}) {
   const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
@@ -87,27 +87,29 @@ for(let i=0;i<7;i++){
       </Tabs>
     </Box>
     {
-      res.length?res.map((ele,i)=>{
+      res.length?res.map((val,i)=>{
         return <TabPanel value={i}>
             <div className="w-100 d-flex flex-column justify-content-between">
                 <div class={`${styles.eachDiv} w-100 d-flex`}>
                     <h6 className='p-2'>morning</h6>
-                    <button className={styles.timeBtn} onClick={(e)=>handleBook(e)}>11:12</button>
-                    <button className={styles.timeBtn} onClick={(e)=>handleBook(e)}>11:12</button>
-                    <button className={styles.timeBtn} onClick={(e)=>handleBook(e)}>11:12</button>
+                    <button className={styles.timeBtn} onClick={(e)=>handleBook(e,ele)}>11:30 AM</button>
+                    {/* <button className={styles.timeBtn} onClick={(e)=>handleBook(e,ele)}>11:12</button>
+                    <button className={styles.timeBtn} onClick={(e)=>handleBook(e,ele)}>11:12</button> */}
                 </div>
                 <div class={`${styles.eachDiv} w-100 d-flex`}>
                   <h6 className='p-2'>Afternoon</h6>
-                  <button className={styles.timeBtn} onClick={(e)=>handleBook(e)}>11:12</button>
-                    <button className={styles.timeBtn} onClick={(e)=>handleBook(e)}>11:12</button>
-                    <button className={styles.timeBtn} onClick={(e)=>handleBook(e)}>11:12</button>
-
+                  <button className={styles.timeBtn} onClick={(e)=>handleBook(e,ele)}>12:00 PM</button>
+                    <button className={styles.timeBtn} onClick={(e)=>handleBook(e,ele)}>12:30 PM</button>
+                    <button className={styles.timeBtn} onClick={(e)=>handleBook(e,ele)}>01:30 PM</button>
+                    <button className={styles.timeBtn} onClick={(e)=>handleBook(e,ele)}>02:00 PM</button>
+                    <button className={styles.timeBtn} onClick={(e)=>handleBook(e,ele)}>02:30 PM</button>
                 </div>
                 <div class={`${styles.eachDiv} w-100 d-flex`}>
                 <h6 className='p-2'>Evening</h6>
-                <button className={styles.timeBtn}>11:12</button>
-                    <button className={styles.timeBtn}>11:12</button>
-                    <button className={styles.timeBtn}>11:12</button>
+                <button className={styles.timeBtn} onClick={(e)=>handleBook(e,ele)}>06:00 PM</button>
+                    <button className={styles.timeBtn} onClick={(e)=>handleBook(e,ele)}>06:30 PM</button>
+                    <button className={styles.timeBtn} onClick={(e)=>handleBook(e,ele)}>07:00 PM</button>
+                    <button className={styles.timeBtn} onClick={(e)=>handleBook(e,ele)}>07:30 PM</button>
                 </div>
             </div>
         </TabPanel>

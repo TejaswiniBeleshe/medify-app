@@ -1,5 +1,5 @@
 .pcareDiv{
-    border: 1px solid #eeff00;
+    /* border: 1px solid #eeff00; */
     /* height: 50px; */
     width: 100%;
     height: auto;
@@ -9,7 +9,7 @@
 }
 
 .pcareImg{
-    border: 1px solid green;
+    /* border: 1px solid green; */
   
     /* height: 50px; */
     /* height: auto; */
@@ -40,7 +40,7 @@
     width: 250px;
 }
 .fcon{
-    border: 1px solid olive;
+    /* border: 1px solid olive; */
     height: 30%;
     /* width: 30%; */
 
