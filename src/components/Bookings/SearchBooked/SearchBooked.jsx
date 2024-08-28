@@ -8,7 +8,7 @@ const SearchBooked = ({hospiName,setHospiName,handleSearch})=>{
         <div className={`${styles.searchBar} d-flex flex-column flex-lg-row justify-content-evenly`}>
             <div className={`${styles.searchIp} d-flex`} >
                 <label htmlFor="state" className="px-2"><LiaHospitalSymbolSolid size={25} /></label>
-                <input type="text" placeholder="Search By Hospital" value={hospiName} onChange={(e)=>setHospiName(e.target.value)}/> 
+                <input type="text" placeholder="Search By Hospital"  value={hospiName} onChange={(e)=>setHospiName(e.target.value)}/> 
             </div>
             <div className={styles.btnDiv} >
                 <button className={styles.searchBtn} onClick={handleSearch}><IoMdSearch size={25} style={{color:"#FFFFFF"}}/>Search</button>
