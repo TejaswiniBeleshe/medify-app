@@ -1,5 +1,5 @@
 .footerBody{
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     height: 30%;
     width: 100%;
     padding: 1rem 2rem;
@@ -7,14 +7,14 @@
     color: #FFFFFF;
 }
 .icons{
-    border: 1px solid green;
+    /* border: 1px solid green; */
 
     width: 30%;
 }
 .listIcons{
-    border: 1px solid yellow;
-    width:80%;
-    height: 40%;
+    /* border: 1px solid yellow; */
+    width:50%;
+    height: auto;
 }
 
 
@@ -23,6 +23,7 @@
     width:65%;
     /* font-size: 2rem; */
 }
+
 
 #vector{
     padding: 0rem .4rem;
@@ -36,4 +37,9 @@
     font-weight: 700;
     color:#2AA8FF; 
 
+}
+.iconDiv{
+    padding: .5rem;
+    border-radius: 50%;
+    background-color: white;
 }

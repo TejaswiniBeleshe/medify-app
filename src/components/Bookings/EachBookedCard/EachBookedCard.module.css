@@ -15,7 +15,7 @@
 .logo{
     padding: 1rem;
     border-radius: 50%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-color: #8CCFFF;
 }
 #likes{
@@ -53,10 +53,10 @@
     border-radius: 8px;
 }
 
-.bookBtn {
+/* .bookBtn {
     border: 1px solid rgb(84, 84, 197);
   
-}
+} */
 
 @media(max-width:475px){
     .hospi{

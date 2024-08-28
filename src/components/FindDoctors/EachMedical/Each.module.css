@@ -1,5 +1,5 @@
 .hospi{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     background-color: #FFFFFF;
     margin: 2rem 7rem;
     
@@ -10,7 +10,7 @@
 
 }
 .hospLogo{
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
 }
 
 .logo{
@@ -32,14 +32,14 @@
 
 
 .hospInfo{
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     padding-top: 1rem;
     width: 50%;
 
 }
 
 .bookBtn{
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     width: 29%;
    
 }

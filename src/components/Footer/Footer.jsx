@@ -1,7 +1,12 @@
 import styles from "../Footer/Footer.module.css";
 import logo from "../../assets/logo.png";
-import { FaGreaterThan } from "react-icons/fa";
+// import { FaGreaterThan } from "react-icons/fa";
 import { GrFacebookOption } from "react-icons/gr";
+import { FaYoutube } from "react-icons/fa";
+import { AiOutlineTwitter } from "react-icons/ai";
+import { FaPinterest } from "react-icons/fa";
+
+
 
 const Footer = ()=>{
     return(
@@ -10,7 +15,11 @@ const Footer = ()=>{
             <div className={`${styles.icons}`}>
             <span id={`${styles.vector}`}><img src={logo} alt="not found" height="13px"/></span><span id={styles.logoName}>Medifty</span>
               
-             <div className={`${styles.listIcons} d-flex`}>
+             <div className={`${styles.listIcons} d-flex justify-content-evenly my-4`}>
+                <span className={styles.iconDiv}><GrFacebookOption size={20} style={{color:"#2AA8FF"}}/></span>
+                <span className={styles.iconDiv}>< AiOutlineTwitter size={20} style={{color:"#2AA8FF"}}/></span>
+                <span className={styles.iconDiv}>< FaYoutube size={20} style={{color:"#2AA8FF"}}/></span>
+                <span className={styles.iconDiv}><FaPinterest size={20} style={{color:"#2AA8FF"}}/></span>
                 
             </div> 
 

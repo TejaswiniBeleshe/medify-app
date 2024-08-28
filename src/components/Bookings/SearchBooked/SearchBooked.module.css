@@ -33,7 +33,7 @@ input:focus{
 .btnDiv{
     width:20%;
     height:40px;
-    border:"1px solid blue";
+    /* border:"1px solid blue"; */
 }
 .searchBtn{
     padding: .4rem;
@@ -58,3 +58,4 @@ input:focus{
         margin-top: .5rem;
     }
 }
+
